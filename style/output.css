@@ -1,0 +1,41 @@
+/* body{
+
+   background-image: none!important;
+   background-color: white;
+
+} */
+
+
+#sub-container{
+
+   background-color: rgb(10, 10, 54);
+   color:white;
+   width:30vw;
+   height:200px;
+   text-align: center;
+   padding-top: 95px;
+   border-radius: 12px; 
+}
+
+h2{
+    font-size: 2.5vw;  
+    margin-bottom: 14px;
+}
+
+
+
+#next-image{
+
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+}
+
+a{
+
+    padding:2px 13px;
+    text-decoration: none;
+    background-color: yellow;
+    color:black;
+    border-radius: 4px;
+}

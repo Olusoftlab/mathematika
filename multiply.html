@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body id="mybody">
+    
+      <header>
+           <div>
+                <img  class="love"    src="image/love.png"   alt="...loading"    />
+                <img  class="love"   src="image/love.png"    alt="...loading"   />
+                <img  class="love"     src="image/love.png"  alt="...loading"   />  
+           </div> 
+
+
+           <div  id="sub-flex">
+                <div>
+                    <img class="coin" src="image/coin.png" alt="...loading" />
+                </div>
+                <div>
+                     <h2><span id="coin-counter"  >0</span> <span>Coins</span></h2>
+                </div>
+                
+           </div>
+           
+           <div id="timer">
+                <h1> <span    id="minutes"   >2</span>:<span  id="seconds" >60</span></h1>   
+           </div>   
+      </header>
+
+      <main>
+ 
+              
+             <div  id="board" >
+                         
+                        <p>Score:<span id="score">0</span></p>
+                        <h1>What is <span  id="num-1"   >6</span> multiply by <span  id="num-2"  >6</span> </h1>
+                    
+                        <div class="container">
+                            <input    autofocus   autocomplete="off"   type="text" id="result-area" placeholder="Enter your answer">
+                        </div>
+                    
+                        <div class="container center">
+                            <button class="btn"  id="unique-but"    type="submit"  >Submit</button>
+                        </div>
+                        
+                            
+             </div>
+             
+             <h1 id="show-area" ></h1>
+
+             
+             <audio  id="sound"  src="media/congrat.mp3"  width="200px" height="30px"    controls  ></audio>
+             <div>
+                  <img  id="ball-1"    src="image/ballon.png"/>  
+                  <img id="ball-2" src="image/ballon.png"  />
+                  <img id="ball-3" src="image/ballon.png" />
+             </div>
+                    
+       
+          
+      </main>
+
+
+    
+
+     <script   src="Scripts/index.js" ></script>
+</body>
+</html>

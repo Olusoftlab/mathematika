@@ -1,0 +1,309 @@
+*{
+
+    margin:0px;
+    padding:0px;
+}
+
+
+
+body{
+ 
+     height:100vw;
+     background-image:url(../image/gama.PNG);  
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat; 
+     background-color: white;
+     overflow:hidden;
+
+}
+
+
+header{
+   position:fixed;
+   width:100%;
+   padding-top: 15px;
+   display:flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+
+header #sub-flex{
+
+    display:flex;
+    align-items: center;
+    color: rgb(221, 17, 44);
+}
+
+
+
+header  .love{
+
+    width:5vw;
+    height:8vh;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+header  .coin{
+ 
+    width: 5vw;
+    height: 8vh;
+    object-fit: contain;
+    object-position: center;
+      
+}
+
+header #timer{
+
+    background-color: black;
+    padding:0px 4px;
+    height:40px;
+    margin-right: 6px
+}
+
+header #timer h1{
+
+    color:rgb(236, 236, 15);
+    padding:0px;
+    
+}
+
+
+main{
+     
+    
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      height:100vh;
+      align-items: center;
+      margin-bottom: 100px;      
+
+}
+
+#sound{
+
+    position:fixed;
+    top:70px;
+    visibility:hidden;
+
+}
+
+
+/* .ball-container{
+
+    position:fixed;
+
+} */
+
+
+#ball-1, #ball-2, #ball-3{
+
+    position:fixed;
+    visibility:hidden;
+}
+
+
+
+#ball-1{
+
+    z-index: 1;
+    right:46vw;
+    
+}
+
+
+.active-ball-1{
+
+     animation:ballone 4s linear ;
+
+}
+
+@keyframes ballone{
+
+  0%{
+      
+      transform:translate(0vw, 0vw)
+       
+  }
+  
+  100%{
+
+      transform:translate(0vw, -20vw);
+      opacity:0.2;
+  }
+
+
+}
+
+.active-ball-2{
+
+      animation:balltwo 4s linear;
+
+}
+
+
+@keyframes balltwo{
+
+    0%{
+
+          transform:translate(0vw,0vw)
+
+    }
+    100%{
+
+        transform:translate(-20vw, -20vw);
+        opacity:0.2;
+    }
+
+}
+
+
+.active-ball-3 {
+
+    animation: ballthree 4s linear;
+
+}
+
+
+@keyframes ballthree {
+
+    0% {
+
+        transform: translate(0vw, 0vw)
+    }
+
+    100% {
+
+        transform: translate(20vw, -20vw);
+        opacity:0.2;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ball-2{
+    z-index: 2;
+    left:38vw;
+}
+
+
+#ball-3{
+
+   z-index: 3;
+   right:37vw;
+
+}
+
+
+
+#board{
+    position:fixed;
+    background-color: white;
+    border-radius: 8px;
+    width:30%;
+    padding:50px;
+     
+}
+
+
+
+
+#show-area{
+          
+     position:fixed;
+     bottom:0px;
+     margin-bottom: 50px;
+     color:red;
+     font-family: cursive;
+     width:100%;
+     text-align: center;
+      
+}
+
+
+
+#board h1{
+
+   font-size: 2.5vw;
+   width:100%;
+   margin-top:18px;
+}
+
+
+#board .container{
+
+    margin-top: 18px;
+}
+
+
+
+#board input{
+
+    width:100%;
+    height:40px;
+    text-align: center;
+    font-size: 1.8vw;
+    outline:none;
+    
+}
+
+
+#board .container {
+
+     text-align: center;
+}
+
+#board .btn{
+
+    width: 100%;
+    height: 38px;
+    font-size: 1.8vw;
+    font-weight: 600px;
+    cursor:pointer;
+    background-color: rgb(146, 146, 247);
+    outline:none;
+    border:none;
+}
+
+#board .btn:hover{
+
+    filter:brightness(80%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
