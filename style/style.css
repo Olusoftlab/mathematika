@@ -354,7 +354,7 @@ main{
          #show-area {
     
              position: fixed;
-             top:10px;
+             top:20px;
              margin-bottom: 50px;
              text-align: center;
              font-size: 4vw;
