@@ -353,9 +353,6 @@ main{
 
     #show-area {
 
-        position: fixed;
-        margin-bottom: 50px;
-        text-align: center;
         font-size: 4vw;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
