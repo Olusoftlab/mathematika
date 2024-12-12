@@ -7,11 +7,31 @@ const inputEl = document.getElementById("result-area")
 const coinEl = document.getElementById("coin-counter")
 const showEl = document.getElementById("show-area")
 const soundEl = document.getElementById("sound")
+const soundEl_2 = document.getElementById("sound-2")
 const ballEl_1 = document.getElementById("ball-1")
 const ballEl_2 = document.getElementById("ball-2")
 const ballEl_3 = document.getElementById("ball-3")
 const seconds = document.getElementById("seconds")
 const minutes = document.getElementById("minutes")
+const boxEl_1 = document.getElementById("box-1")
+const boxEl_2 = document.getElementById("box-2")
+const boxEl_3 = document.getElementById("box-3")
+const boxEl_4 = document.getElementById("box-4")
+const boxEl_5 = document.getElementById("box-5")
+const boxEl_6 = document.getElementById("box-6")
+const boxEl_7 = document.getElementById("box-7")
+const boxEl_8 = document.getElementById("box-8")
+const boxEl_9 = document.getElementById("box-9")
+const boxEl_0 = document.getElementById("box-0")
+const cancelEl = document.getElementById("cancel")
+
+
+
+
+
+
+
+
 
 minutes.innerText = Math.floor(Math.random() * 2 + 1)
 
@@ -35,6 +55,90 @@ num_2.innerText = Math.floor(Math.random() * 9 + 2)
 
 
 
+boxEl_1.onclick = () => {
+
+    inputEl.value += 1
+
+}
+
+
+boxEl_2.onclick = () => {
+
+    inputEl.value += 2
+
+}
+
+
+boxEl_3.onclick = () => {
+
+    inputEl.value += 3
+
+}
+
+
+boxEl_4.onclick = () => {
+
+    inputEl.value += 4
+
+}
+
+
+
+boxEl_5.onclick = () => {
+
+    inputEl.value += 5
+
+}
+
+
+boxEl_6.onclick = () => {
+
+    inputEl.value += 6
+
+}
+
+
+boxEl_7.onclick = () => {
+
+    inputEl.value += 7
+
+}
+
+
+
+boxEl_8.onclick = () => {
+
+    inputEl.value += 8
+
+}
+
+
+
+boxEl_9.onclick = () => {
+
+    inputEl.value += 9
+
+}
+
+
+boxEl_0.onclick = () => {
+
+    inputEl.value += 0
+
+}
+
+
+cancelEl.onclick = () => {
+
+    inputEl.value = ""
+
+}
+
+
+
+
+
+
 const getResult = () => {
 
     const loveArray = [liveEl[0], liveEl[1], liveEl[2]];
@@ -46,6 +150,10 @@ const getResult = () => {
     const myNum_2 = parseInt(num_2.innerText)
 
     const result = myNum_1 * myNum_2
+
+
+
+
 
 
 
@@ -91,7 +199,7 @@ const getResult = () => {
                     http.send()
 
 
-                }, 4309);
+                }, 2000);
 
 
             } else {
@@ -122,10 +230,9 @@ const getResult = () => {
 
                     counter = 0
                 }
-
+                soundEl_2.play()
                 showEl.innerHTML = "<span  style=\" color:red   \"  >Game Over</span>"
                 setTimeout(() => {
-
 
                     const http = new XMLHttpRequest()
 
@@ -145,7 +252,7 @@ const getResult = () => {
                     http.send()
 
 
-                }, 2000);
+                }, 3000);
 
             } else if (score < 0 && counter < 0) {
 

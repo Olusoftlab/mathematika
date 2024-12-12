@@ -94,6 +94,14 @@ main{
 
 }
 
+#sound-2{
+
+    position: fixed;
+    top: 70px;
+    visibility: hidden;
+
+
+}
 
 /* .ball-container{
 
@@ -225,8 +233,57 @@ main{
     border-radius: 8px;
     width:30%;
     padding:50px;
-     
+    margin-top: -50px; 
 }
+
+
+ #grid-container{
+      position:fixed;
+      display:grid;
+      bottom:-140px;    
+      grid-template-columns: 40px 40px 40px 40px 40px 40px 40px ;
+      grid-template-rows: 40px 40px 40px 40px 40px 40px 40px ;
+      grid-gap: 8px; 
+}
+
+#grid-container button{
+
+    border-radius: 6px;
+    background-color: yellow;
+}
+
+
+#grid-container button{
+
+    display:block;
+    border:1px solid black;
+    cursor:pointer;
+}
+
+
+#grid-container button h1{
+ 
+     text-align: center;
+}
+
+
+#grid-container #cancel{
+
+    background-color: red;
+}
+
+
+
+#grid-container #cancel .inside{
+
+  width:40px;
+  height:40px;
+  object-fit: contain;
+
+}
+
+
+
 
 
 
@@ -235,7 +292,7 @@ main{
           
      position:fixed;
      bottom:0px;
-     margin-bottom: 50px;
+     margin-bottom: 20px;
      color:red;
      font-family: cursive;
      width:100%;
@@ -249,7 +306,7 @@ main{
 
    font-size: 2.5vw;
    width:100%;
-   margin-top:18px;
+   margin-top:16px;
 }
 
 
@@ -307,7 +364,7 @@ main{
         border-radius: 8px;
         width: 60%;
         padding: 30px;
-
+        margin-top: -160px;
     }
 
 
