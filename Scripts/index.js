@@ -263,7 +263,7 @@ const getResult = () => {
             inputEl.value = "";
             inputEl.focus()
             loveArray[countArr].remove()
-            showEl.innerHTML = `<span  style=\" color:red   \"  >${countArr > 0 ? `${countArr} ${countArr > 1 ? "lives" : "live"} remaining` : "Game Over"}</span>`
+            showEl.innerHTML = `<span  style=\" color:red   \"  >${countArr > 0 ? `${countArr} ${countArr > 1 ? "live" : "lives"} remaining` : "Game Over"}</span>`
             countArr--
             myScore.innerText = score;
             coinEl.innerText = counter;;
